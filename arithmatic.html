@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var a,b,c;
+        function add()
+        {
+            a=Number(document.getElementById("a").value);
+            b=Number(document.getElementById("b").value);
+            c=a+b;
+            document.getElementById("c").value=c;
+        }
+        function sub()
+        {
+            a=Number(document.getElementById("a").value);
+            b=Number(document.getElementById("b").value);
+            c=a-b;
+            document.getElementById("c").value=c;
+        }
+        function mul()
+        {
+            a=Number(document.getElementById("a").value);
+            b=Number(document.getElementById("b").value);
+            c=a*b;
+            document.getElementById("c").value=c;
+        }
+        function divd()
+        {
+            a=Number(document.getElementById("a").value);
+            b=Number(document.getElementById("b").value);
+            c=a/b;
+            document.getElementById("c").value=c;
+        }
+    </script>
+<pre>
+ENTER FIRST NUMBER  :  <input type="text" id="a"></br>
+ENTER SECOND NUMBER :  <input type="text" id="b">
+
+RESULT IS           :  <input type="text" id="c" readonly>
+
+</pre>
+
+<input type ="submit" value="ADD" onclick="add()">
+<input type="submit" value="SUBTRACT" onclick="sub()">
+<input type="submit" value="MULTIPLY" onclick="mul()">
+<input type="submit" value="DIVIDE" onclick="divd()">
+</body>
+</html>
